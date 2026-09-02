@@ -6,3 +6,4 @@ requests
 bandit
 black
 numpy
+pandas
