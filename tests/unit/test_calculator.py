@@ -60,6 +60,11 @@ class TestMultiplyDivide:
         assert multiply(5, 0) == 0
         assert multiply(0, 10) == 0
 
+    def test_divide_zero_by_number(self):
+        """Test dividing zero by a non-zero number"""
+        assert divide(0, 5) == 0
+        assert divide(0, -5) == 0
+
     def test_multiply_negative_numbers(self):
         """Test multiplying negative numbers"""
         assert multiply(-2, 3) == -6
