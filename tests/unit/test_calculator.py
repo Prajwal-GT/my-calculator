@@ -106,3 +106,7 @@ class TestAdvancedOperations:
             ValueError, match="Cannot calculate square root of negative number"
         ):
             square_root(-4)
+    def test_power_negative_exponent(self):
+        """Test power with a negative exponent"""
+        assert power(2, -2) == 0.25
+        assert power(5, -1) == 0.2
